@@ -5,8 +5,10 @@
     "deploy": "wrangler deploy --minify src/index.ts"
   },
   "dependencies": {
+    "@100xdevs/medium-common": "^1.0.0",
     "@prisma/client": "^5.15.1",
     "@prisma/extension-accelerate": "^1.1.0",
+    "@rishabhknows/blog-types-commons": "^1.0.0",
     "hono": "^4.4.4",
     "init": "^0.1.2",
     "jsonwebtoken": "^9.0.2",
