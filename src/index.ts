@@ -8,9 +8,9 @@ const app = new Hono<{
       DATABASE_URL : string,
       JWT_SECRET : string
     }
-}>()
+}>();
 
-app.route('/api/v1/user' , userRouter)
-app.route('/api/v1/blog' , blogRouter)
+app.route('/api/v1/user' , userRouter);
+app.route('/api/v1/blog' , blogRouter);
 
-export default app
+export default app;
