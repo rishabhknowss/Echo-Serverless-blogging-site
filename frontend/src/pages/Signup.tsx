@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export const Signup = () => {
+    const navigate = useNavigate()
   return (
     <>
       <section>
@@ -79,18 +82,15 @@ export const Signup = () => {
                 </div>
                 <button
                   type="submit"
-                  className=" border border-slate-700 w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  className=" hover:bg-slate-600 border border-slate-700 w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                 >
                   Create an account
                 </button>
-                <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                  Already have an account?{" "}
-                  <a
-                    href="#"
-                    className="font-medium text-primary-600 hover:underline dark:text-primary-500"
-                  >
-                    Login here
-                  </a>
+                <p className="flex text-sm font-light text-gray-500 dark:text-gray-400">
+                  Already have an account?
+                 <div className="font-medium underline cursor-pointer" onClick={()=>navigate('/signin')}> Login here</div>
+                   
+                  
                 </p>
               </form>
             </div>
